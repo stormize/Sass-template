@@ -1,0 +1,31 @@
+.card-group{
+    display: grid;
+    grid-template-columns: 33%; 
+}
+.updates-card-group{
+    @include flex-row;
+    background-color: transparent;
+}
+.recipe-card-group2{
+ display: flex;
+ justify-content: space-around;
+}
+.recipe-card-group{
+    @include flex-row;
+    width: 100%;
+    &__title{
+        width: 30%;
+        position: sticky;
+        top:0;
+    }
+    &__recipe-grid{
+        width: 70%;
+    }
+}
+
+.category-card-group{
+    @include flex-row-center;
+    >*{
+        margin:0 0.5em;
+    }
+}

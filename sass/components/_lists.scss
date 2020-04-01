@@ -1,0 +1,33 @@
+.list{
+ display: flex;
+&--horizontal{
+ flex-flow: row wrap;
+ justify-content: start;
+}
+&--vertical{
+ flex-flow: column wrap;
+ justify-content: center;
+}
+&__item{
+  @include flex-colmn-center;
+    line-height: 2rem;
+    text-align: center;
+  &__image{
+      width:25%;
+      height: 40%;
+      margin: 1rem 0;
+    }
+  &__text{
+    text-align: start;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+&--left-border{
+  &__item:not(:first-child){
+    border-left: solid rgb(159 , 159 ,159) 1px;
+  }
+}
+
+}
+

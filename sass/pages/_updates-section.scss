@@ -1,0 +1,12 @@
+.updates-section{
+    padding: 3rem;
+    &  .article *{
+        margin: 1.5rem auto;
+    }
+     & > .article{
+        padding:0 8rem;
+     }    
+    padding:5rem;
+    background-color: $recipe-card-background;
+    
+}

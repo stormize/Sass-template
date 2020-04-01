@@ -1,0 +1,926 @@
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes move-up {
+  from {
+    transform: translate(0, -1rem); }
+  to {
+    transform: translate(0, 0); } }
+
+@keyframes liquid {
+  from {
+    object-position: -400px 0px; }
+  to {
+    object-position: center; } }
+
+.categories-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 10rem; }
+  .categories-section .article * {
+    margin: 2rem auto; }
+  @media (max-width: 600px) {
+    .categories-section .category-card-group {
+      flex-flow: column;
+      justify-content: space-between; }
+    .categories-section .category-card {
+      flex-flow: row;
+      height: 3rem;
+      width: 15rem; }
+    .categories-section .category-card__body {
+      flex-flow: row; }
+    .categories-section .category-card__title {
+      writing-mode: horizontal-tb; } }
+  @media (max-width: 800px) {
+    .categories-section .category-card-group {
+      flex-flow: column;
+      justify-content: space-between; }
+    .categories-section .category-card {
+      flex-flow: row;
+      height: 3rem;
+      width: 15rem; }
+    .categories-section .category-card:hover {
+      height: 15rem; }
+    .categories-section .category-card__body {
+      flex-flow: row;
+      writing-mode: horizontal-tb; }
+    .categories-section .category-card__title {
+      writing-mode: horizontal-tb; } }
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 3rem;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); }
+  .footer-section__star1 {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 75rem 73rem #fff,13rem 1rem #fff,54rem 64rem #fff,68rem 74rem #fff,50rem 44rem #fff,21rem 78rem #fff,43rem 32rem #fff,49rem 42rem #fff,17rem 5rem #fff,26rem 79rem #fff,14rem 59rem #fff,63rem 22rem #fff,44rem 63rem #fff,32rem 41rem #fff,35rem 28rem #fff,48rem 30rem #fff,32rem 17rem #fff,64rem 79rem #fff,44rem 55rem #fff,53rem 46rem #fff,76rem 60rem #fff,24rem 10rem #fff,19rem 1rem #fff,62rem 49rem #fff,66rem 7rem #fff,17rem 41rem #fff,31rem 63rem #fff,49rem 8rem #fff,6rem 49rem #fff,6rem 79rem #fff,58rem 26rem #fff,41rem 51rem #fff,26rem 21rem #fff,72rem 7rem #fff,66rem 56rem #fff,73rem 28rem #fff,62rem 49rem #fff,15rem 47rem #fff,19rem 3rem #fff,63rem 20rem #fff,40rem 29rem #fff,53rem 10rem #fff,24rem 46rem #fff,64rem 33rem #fff,58rem 48rem #fff,49rem 79rem #fff,26rem 25rem #fff,27rem 2rem #fff,62rem 70rem #fff,9rem 63rem #fff,16rem 54rem #fff,71rem 17rem #fff,26rem 53rem #fff,80rem 63rem #fff,64rem 2rem #fff,30rem 77rem #fff,65rem 57rem #fff,2rem 34rem #fff,18rem 32rem #fff,29rem 3rem #fff,69rem 72rem #fff,69rem 33rem #fff,56rem 60rem #fff,40rem 26rem #fff,58rem 13rem #fff,75rem 22rem #fff,19rem 42rem #fff,8rem 24rem #fff,63rem 56rem #fff,75rem 17rem #fff,34rem 71rem #fff,67rem 51rem #fff,50rem 4rem #fff,70rem 60rem #fff,31rem 23rem #fff,67rem 75rem #fff,14rem 15rem #fff,77rem 28rem #fff,12rem 35rem #fff,41rem 60rem #fff,48rem 26rem #fff,15rem 58rem #fff,76rem 66rem #fff,66rem 54rem #fff,66rem 71rem #fff,38rem 78rem #fff,24rem 8rem #fff,15rem 49rem #fff,4rem 4rem #fff,48rem 26rem #fff,7rem 25rem #fff,77rem 77rem #fff,25rem 77rem #fff,52rem 48rem #fff,19rem 45rem #fff,60rem 53rem #fff,51rem 16rem #fff,3rem 71rem #fff,65rem 58rem #fff,61rem 61rem #fff,16rem 79rem #fff,61rem 37rem #fff,55rem 70rem #fff,23rem 23rem #fff,24rem 58rem #fff,14rem 38rem #fff,71rem 5rem #fff,48rem 36rem #fff,51rem 31rem #fff,58rem 15rem #fff,54rem 42rem #fff,75rem 11rem #fff,5rem 50rem #fff,30rem 25rem #fff,5rem 2rem #fff,78rem 69rem #fff,59rem 32rem #fff,29rem 68rem #fff,21rem 8rem #fff,59rem 12rem #fff,20rem 73rem #fff,36rem 35rem #fff,41rem 20rem #fff,76rem 76rem #fff,62rem 14rem #fff,32rem 68rem #fff,50rem 33rem #fff,55rem 23rem #fff,24rem 68rem #fff,61rem 52rem #fff,3rem 45rem #fff,68rem 76rem #fff,74rem 61rem #fff,52rem 49rem #fff,67rem 63rem #fff,29rem 13rem #fff,58rem 54rem #fff,62rem 1rem #fff,29rem 75rem #fff,18rem 74rem #fff,22rem 65rem #fff,30rem 55rem #fff,21rem 65rem #fff,63rem 15rem #fff,53rem 4rem #fff,21rem 8rem #fff,74rem 62rem #fff,37rem 66rem #fff,47rem 7rem #fff,78rem 11rem #fff,73rem 80rem #fff,76rem 12rem #fff,43rem 10rem #fff,9rem 69rem #fff,22rem 4rem #fff,34rem 60rem #fff,7rem 8rem #fff,52rem 9rem #fff,27rem 9rem #fff,43rem 75rem #fff,14rem 68rem #fff,79rem 48rem #fff,59rem 5rem #fff,65rem 1rem #fff,24rem 4rem #fff,29rem 30rem #fff,4rem 64rem #fff,47rem 11rem #fff,29rem 20rem #fff,23rem 16rem #fff,62rem 20rem #fff,52rem 26rem #fff,14rem 43rem #fff,56rem 58rem #fff,6rem 36rem #fff,34rem 47rem #fff,52rem 12rem #fff,17rem 22rem #fff,20rem 33rem #fff,37rem 36rem #fff,31rem 4rem #fff,20rem 40rem #fff,55rem 26rem #fff,15rem 53rem #fff,59rem 46rem #fff,72rem 31rem #fff,79rem 43rem #fff,61rem 69rem #fff,43rem 68rem #fff,59rem 5rem #fff,78rem 1rem #fff,50rem 61rem #fff,68rem 54rem #fff,25rem 6rem #fff,16rem 57rem #fff,69rem 39rem #fff,15rem 45rem #fff,22rem 49rem #fff,73rem 48rem #fff,11rem 15rem #fff,4rem 44rem #fff,73rem 13rem #fff,45rem 13rem #fff,76rem 17rem #fff,70rem 32rem #fff,24rem 64rem #fff,76rem 20rem #fff,25rem 18rem #fff,23rem 17rem #fff,50rem 25rem #fff,29rem 39rem #fff,53rem 38rem #fff,20rem 70rem #fff,56rem 69rem #fff,25rem 12rem #fff,69rem 40rem #fff,2rem 66rem #fff,64rem 32rem #fff,70rem 62rem #fff,10rem 78rem #fff,13rem 64rem #fff,77rem 56rem #fff,44rem 61rem #fff,38rem 12rem #fff,48rem 73rem #fff,49rem 1rem #fff,74rem 73rem #fff,40rem 36rem #fff,74rem 76rem #fff,41rem 54rem #fff,34rem 3rem #fff,29rem 13rem #fff,53rem 6rem #fff,60rem 71rem #fff,9rem 36rem #fff,64rem 78rem #fff,48rem 50rem #fff,71rem 75rem #fff,21rem 42rem #fff,60rem 60rem #fff,51rem 80rem #fff,61rem 36rem #fff,38rem 65rem #fff,40rem 9rem #fff,76rem 45rem #fff,11rem 57rem #fff,73rem 43rem #fff,70rem 65rem #fff,16rem 10rem #fff,45rem 50rem #fff,79rem 44rem #fff,29rem 38rem #fff,4rem 70rem #fff,57rem 31rem #fff,43rem 8rem #fff,71rem 76rem #fff,29rem 60rem #fff,4rem 61rem #fff,47rem 40rem #fff,71rem 54rem #fff,17rem 61rem #fff,11rem 64rem #fff,62rem 30rem #fff,6rem 24rem #fff,45rem 69rem #fff,60rem 15rem #fff,7rem 44rem #fff,41rem 64rem #fff,3rem 18rem #fff,62rem 66rem #fff,18rem 5rem #fff,67rem 6rem #fff,20rem 76rem #fff,74rem 1rem #fff,69rem 9rem #fff,47rem 14rem #fff,24rem 73rem #fff,38rem 65rem #fff,64rem 66rem #fff,21rem 22rem #fff,33rem 20rem #fff,25rem 45rem #fff,40rem 27rem #fff,79rem 64rem #fff,44rem 20rem #fff,70rem 55rem #fff,48rem 21rem #fff,37rem 68rem #fff,43rem 34rem #fff,36rem 23rem #fff,65rem 33rem #fff,66rem 80rem #fff,25rem 45rem #fff,4rem 9rem #fff,4rem 41rem #fff,3rem 15rem #fff,7rem 53rem #fff,49rem 10rem #fff,69rem 13rem #fff,76rem 1rem #fff;
+    animation: move 20s infinite linear; }
+  .footer-section__star1:after {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    content: " ";
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 41rem 26rem #fff,36rem 5rem #fff,2rem 73rem #fff,40rem 27rem #fff,67rem 6rem #fff,46rem 69rem #fff,39rem 78rem #fff,66rem 50rem #fff,2rem 24rem #fff,22rem 24rem #fff,47rem 51rem #fff,71rem 10rem #fff,5rem 23rem #fff,17rem 43rem #fff,15rem 31rem #fff,33rem 70rem #fff,19rem 18rem #fff,69rem 11rem #fff,42rem 24rem #fff,18rem 38rem #fff,25rem 41rem #fff,21rem 24rem #fff,63rem 12rem #fff,47rem 67rem #fff,50rem 59rem #fff,55rem 4rem #fff,44rem 13rem #fff,68rem 46rem #fff,79rem 37rem #fff,32rem 64rem #fff,24rem 36rem #fff,31rem 14rem #fff,6rem 68rem #fff,14rem 39rem #fff,21rem 58rem #fff,52rem 7rem #fff,70rem 58rem #fff,44rem 55rem #fff,36rem 50rem #fff,8rem 71rem #fff,71rem 47rem #fff,2rem 39rem #fff,22rem 64rem #fff,35rem 29rem #fff,18rem 24rem #fff,15rem 50rem #fff,22rem 16rem #fff,75rem 79rem #fff,29rem 53rem #fff,34rem 54rem #fff,50rem 78rem #fff,73rem 62rem #fff,21rem 38rem #fff,49rem 2rem #fff,66rem 67rem #fff,60rem 46rem #fff,29rem 24rem #fff,34rem 34rem #fff,69rem 13rem #fff,32rem 76rem #fff,42rem 29rem #fff,51rem 10rem #fff,33rem 19rem #fff,3rem 47rem #fff,48rem 66rem #fff,50rem 30rem #fff,15rem 33rem #fff,9rem 62rem #fff,67rem 7rem #fff,22rem 19rem #fff,28rem 17rem #fff,38rem 77rem #fff,43rem 64rem #fff,31rem 51rem #fff,65rem 37rem #fff,79rem 15rem #fff,16rem 72rem #fff,3rem 25rem #fff,26rem 23rem #fff,4rem 35rem #fff,6rem 51rem #fff,56rem 4rem #fff,15rem 29rem #fff,48rem 11rem #fff,58rem 60rem #fff,17rem 52rem #fff,61rem 73rem #fff,35rem 48rem #fff,23rem 7rem #fff,35rem 28rem #fff,59rem 56rem #fff,27rem 24rem #fff,4rem 45rem #fff,52rem 26rem #fff,75rem 5rem #fff,3rem 42rem #fff,66rem 33rem #fff,56rem 18rem #fff,19rem 40rem #fff,22rem 58rem #fff,75rem 55rem #fff,8rem 34rem #fff,32rem 79rem #fff,42rem 23rem #fff,69rem 28rem #fff,22rem 58rem #fff,31rem 54rem #fff,43rem 74rem #fff,38rem 3rem #fff,65rem 47rem #fff,29rem 43rem #fff,79rem 11rem #fff,3rem 44rem #fff,14rem 11rem #fff,37rem 16rem #fff,42rem 55rem #fff,10rem 43rem #fff,39rem 76rem #fff,20rem 68rem #fff,20rem 32rem #fff,10rem 66rem #fff,7rem 43rem #fff,27rem 30rem #fff,36rem 45rem #fff,7rem 57rem #fff,8rem 40rem #fff,50rem 57rem #fff,20rem 13rem #fff,12rem 57rem #fff,70rem 70rem #fff,15rem 16rem #fff,75rem 74rem #fff,12rem 70rem #fff,7rem 12rem #fff,78rem 24rem #fff,14rem 46rem #fff,52rem 41rem #fff,64rem 56rem #fff,18rem 73rem #fff,75rem 6rem #fff,49rem 57rem #fff,71rem 49rem #fff,5rem 66rem #fff,42rem 5rem #fff,2rem 23rem #fff,80rem 12rem #fff,64rem 16rem #fff,6rem 6rem #fff,39rem 74rem #fff,14rem 7rem #fff,36rem 40rem #fff,55rem 11rem #fff,47rem 63rem #fff,49rem 37rem #fff,5rem 43rem #fff,38rem 59rem #fff,73rem 9rem #fff,8rem 36rem #fff,19rem 19rem #fff,38rem 73rem #fff,9rem 60rem #fff,67rem 32rem #fff,8rem 6rem #fff,37rem 56rem #fff,6rem 18rem #fff,26rem 13rem #fff,78rem 80rem #fff,79rem 42rem #fff,42rem 58rem #fff,24rem 11rem #fff,28rem 16rem #fff,67rem 62rem #fff,75rem 51rem #fff,51rem 78rem #fff,10rem 47rem #fff,24rem 47rem #fff,4rem 79rem #fff,13rem 24rem #fff,32rem 52rem #fff,7rem 22rem #fff,70rem 72rem #fff,75rem 46rem #fff,12rem 5rem #fff,33rem 37rem #fff,58rem 75rem #fff,22rem 25rem #fff,43rem 58rem #fff,61rem 34rem #fff,14rem 3rem #fff,56rem 63rem #fff,76rem 32rem #fff,46rem 21rem #fff,74rem 64rem #fff,66rem 47rem #fff,1rem 53rem #fff,7rem 51rem #fff,5rem 61rem #fff,43rem 66rem #fff,64rem 14rem #fff,16rem 35rem #fff,77rem 74rem #fff,2rem 1rem #fff,17rem 68rem #fff,66rem 10rem #fff,78rem 27rem #fff,58rem 46rem #fff,12rem 69rem #fff,27rem 53rem #fff,15rem 40rem #fff,62rem 67rem #fff,46rem 79rem #fff,65rem 3rem #fff,6rem 50rem #fff,32rem 77rem #fff,53rem 70rem #fff,33rem 70rem #fff,39rem 7rem #fff,29rem 35rem #fff,22rem 54rem #fff,5rem 25rem #fff,52rem 67rem #fff,2rem 6rem #fff,47rem 20rem #fff,22rem 64rem #fff,64rem 13rem #fff,74rem 10rem #fff,40rem 20rem #fff,45rem 49rem #fff,49rem 48rem #fff,51rem 33rem #fff,35rem 30rem #fff,70rem 59rem #fff,80rem 46rem #fff,66rem 52rem #fff,64rem 11rem #fff,49rem 30rem #fff,77rem 35rem #fff,61rem 58rem #fff,68rem 31rem #fff,35rem 54rem #fff,48rem 75rem #fff,51rem 28rem #fff,61rem 24rem #fff,49rem 24rem #fff,72rem 67rem #fff,33rem 64rem #fff,34rem 4rem #fff,66rem 74rem #fff,16rem 1rem #fff,47rem 37rem #fff,55rem 55rem #fff,41rem 36rem #fff,66rem 4rem #fff,31rem 61rem #fff,8rem 63rem #fff,13rem 22rem #fff,43rem 66rem #fff,64rem 46rem #fff,65rem 42rem #fff,4rem 70rem #fff,1rem 40rem #fff,11rem 56rem #fff,63rem 25rem #fff,68rem 57rem #fff,19rem 40rem #fff,4rem 30rem #fff,66rem 77rem #fff,18rem 3rem #fff,76rem 37rem #fff,57rem 53rem #fff,64rem 61rem #fff,27rem 72rem #fff,42rem 8rem #fff,32rem 71rem #fff,3rem 73rem #fff,28rem 49rem #fff,67rem 39rem #fff,78rem 16rem #fff,62rem 18rem #fff,76rem 17rem #fff,2rem 64rem #fff,47rem 45rem #fff,40rem 67rem #fff,80rem 37rem #fff,8rem 4rem #fff,46rem 76rem #fff,57rem 37rem #fff,1rem 29rem #fff,15rem 53rem #fff,39rem 39rem #fff,64rem 35rem #fff,62rem 42rem #fff,16rem 33rem #fff,28rem 8rem #fff,20rem 70rem #fff,10rem 60rem #fff,34rem 25rem #fff,38rem 54rem #fff,6rem 29rem #fff,46rem 79rem #fff; }
+  .footer-section__star2 {
+    right: 0;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 29rem 39rem #fff,35rem 56rem #fff,70rem 31rem #fff,40rem 65rem #fff,59rem 42rem #fff,19rem 48rem #fff,17rem 57rem #fff,3rem 59rem #fff,57rem 42rem #fff,31rem 29rem #fff,41rem 66rem #fff,64rem 30rem #fff,11rem 32rem #fff,52rem 26rem #fff,35rem 73rem #fff,49rem 43rem #fff,65rem 54rem #fff,64rem 31rem #fff,17rem 76rem #fff,65rem 21rem #fff,50rem 74rem #fff,48rem 29rem #fff,24rem 24rem #fff,29rem 59rem #fff,64rem 37rem #fff,75rem 1rem #fff,54rem 23rem #fff,43rem 42rem #fff,51rem 7rem #fff,54rem 10rem #fff,71rem 38rem #fff,6rem 20rem #fff,23rem 39rem #fff,42rem 12rem #fff,80rem 69rem #fff,58rem 23rem #fff,19rem 51rem #fff,62rem 3rem #fff,36rem 24rem #fff,40rem 51rem #fff,8rem 55rem #fff,11rem 15rem #fff,4rem 13rem #fff,42rem 53rem #fff,24rem 39rem #fff,51rem 75rem #fff,80rem 67rem #fff,32rem 21rem #fff,54rem 49rem #fff,35rem 22rem #fff,55rem 71rem #fff,8rem 40rem #fff,44rem 31rem #fff,45rem 67rem #fff,53rem 40rem #fff,62rem 53rem #fff,12rem 18rem #fff,54rem 54rem #fff,21rem 5rem #fff,74rem 58rem #fff,2rem 12rem #fff,79rem 42rem #fff,11rem 36rem #fff,58rem 2rem #fff,12rem 62rem #fff,33rem 54rem #fff,76rem 11rem #fff,59rem 27rem #fff,69rem 12rem #fff,10rem 29rem #fff,49rem 59rem #fff,21rem 8rem #fff,29rem 64rem #fff,2rem 41rem #fff,4rem 34rem #fff,49rem 30rem #fff,34rem 28rem #fff,80rem 34rem #fff,59rem 74rem #fff,23rem 43rem #fff,75rem 18rem #fff,53rem 52rem #fff,5rem 15rem #fff,31rem 30rem #fff,69rem 63rem #fff,49rem 75rem #fff,79rem 48rem #fff,16rem 69rem #fff,19rem 45rem #fff,64rem 51rem #fff,47rem 74rem #fff,75rem 31rem #fff,50rem 59rem #fff,45rem 43rem #fff,60rem 30rem #fff,21rem 22rem #fff,26rem 72rem #fff,43rem 18rem #fff,27rem 31rem #fff,7rem 36rem #fff;
+    animation: move 20s infinite linear; }
+  .footer-section__star2:after {
+    position: absolute;
+    top: 50rem;
+    content: " ";
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 67rem 2rem #fff,38rem 70rem #fff,68rem 76rem #fff,13rem 55rem #fff,40rem 2rem #fff,67rem 29rem #fff,3rem 58rem #fff,17rem 55rem #fff,76rem 40rem #fff,4rem 8rem #fff,42rem 74rem #fff,63rem 30rem #fff,56rem 46rem #fff,15rem 9rem #fff,39rem 58rem #fff,8rem 55rem #fff,80rem 25rem #fff,65rem 5rem #fff,18rem 6rem #fff,46rem 41rem #fff,33rem 3rem #fff,70rem 31rem #fff,1rem 39rem #fff,25rem 2rem #fff,57rem 5rem #fff,56rem 20rem #fff,56rem 34rem #fff,10rem 38rem #fff,12rem 70rem #fff,7rem 27rem #fff,24rem 50rem #fff,41rem 10rem #fff,55rem 40rem #fff,64rem 23rem #fff,3rem 56rem #fff,29rem 49rem #fff,75rem 56rem #fff,43rem 24rem #fff,11rem 30rem #fff,74rem 75rem #fff,80rem 37rem #fff,48rem 34rem #fff,61rem 29rem #fff,35rem 35rem #fff,78rem 23rem #fff,41rem 8rem #fff,51rem 41rem #fff,42rem 68rem #fff,53rem 62rem #fff,17rem 80rem #fff,1rem 63rem #fff,72rem 30rem #fff,14rem 60rem #fff,27rem 21rem #fff,66rem 28rem #fff,18rem 29rem #fff,40rem 5rem #fff,62rem 60rem #fff,51rem 36rem #fff,32rem 21rem #fff,24rem 47rem #fff,12rem 68rem #fff,45rem 17rem #fff,9rem 71rem #fff,26rem 21rem #fff,13rem 33rem #fff,7rem 59rem #fff,63rem 58rem #fff,36rem 67rem #fff,64rem 16rem #fff,50rem 21rem #fff,19rem 50rem #fff,66rem 29rem #fff,17rem 40rem #fff,24rem 60rem #fff,44rem 61rem #fff,44rem 73rem #fff,75rem 45rem #fff,75rem 47rem #fff,79rem 28rem #fff,34rem 16rem #fff,53rem 47rem #fff,72rem 36rem #fff,70rem 3rem #fff,64rem 24rem #fff,22rem 50rem #fff,57rem 51rem #fff,59rem 32rem #fff,4rem 56rem #fff,79rem 42rem #fff,36rem 75rem #fff,4rem 74rem #fff,67rem 55rem #fff,19rem 49rem #fff,41rem 63rem #fff,58rem 30rem #fff,8rem 43rem #fff,53rem 45rem #fff,33rem 71rem #fff,71rem 30rem #fff; }
+  .footer-section__star3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 17rem 30rem #fff,70rem 35rem #fff,23rem 10rem #fff,18rem 65rem #fff,46rem 2rem #fff,40rem 19rem #fff,28rem 12rem #fff,28rem 12rem #fff,45rem 21rem #fff,67rem 2rem #fff,26rem 35rem #fff,59rem 38rem #fff,61rem 77rem #fff,63rem 16rem #fff,51rem 22rem #fff,11rem 71rem #fff,18rem 19rem #fff,13rem 31rem #fff,17rem 37rem #fff,30rem 68rem #fff,39rem 39rem #fff,41rem 49rem #fff,31rem 66rem #fff,41rem 22rem #fff,41rem 65rem #fff,64rem 28rem #fff,54rem 5rem #fff,62rem 75rem #fff,28rem 8rem #fff,32rem 28rem #fff,70rem 76rem #fff,2rem 16rem #fff,1rem 70rem #fff,73rem 69rem #fff,46rem 16rem #fff,24rem 67rem #fff,38rem 8rem #fff,42rem 36rem #fff,30rem 11rem #fff,34rem 58rem #fff,9rem 31rem #fff,64rem 30rem #fff,8rem 45rem #fff,66rem 4rem #fff,5rem 69rem #fff,30rem 56rem #fff,17rem 31rem #fff,22rem 73rem #fff,3rem 57rem #fff,5rem 54rem #fff;
+    animation: move 30s infinite linear; }
+  .footer-section__star3:after {
+    position: absolute;
+    top: 50rem;
+    content: " ";
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 45rem 9rem #fff,42rem 36rem #fff,29rem 74rem #fff,14rem 5rem #fff,54rem 2rem #fff,76rem 35rem #fff,18rem 8rem #fff,61rem 19rem #fff,57rem 64rem #fff,12rem 23rem #fff,9rem 24rem #fff,39rem 40rem #fff,8rem 76rem #fff,40rem 20rem #fff,28rem 33rem #fff,49rem 37rem #fff,5rem 67rem #fff,44rem 11rem #fff,64rem 57rem #fff,65rem 20rem #fff,71rem 36rem #fff,46rem 29rem #fff,19rem 41rem #fff,80rem 30rem #fff,53rem 38rem #fff,29rem 52rem #fff,56rem 4rem #fff,67rem 31rem #fff,48rem 21rem #fff,44rem 1rem #fff,11rem 45rem #fff,39rem 24rem #fff,20rem 39rem #fff,71rem 37rem #fff,47rem 19rem #fff,19rem 68rem #fff,60rem 53rem #fff,3rem 21rem #fff,37rem 42rem #fff,12rem 36rem #fff,12rem 62rem #fff,49rem 56rem #fff,37rem 72rem #fff,54rem 62rem #fff,70rem 64rem #fff,73rem 35rem #fff,62rem 44rem #fff,1rem 21rem #fff,47rem 65rem #fff,7rem 60rem #fff; }
+
+@keyframes move {
+  from {
+    transform: translateY(0rem); }
+  to {
+    transform: translateY(-50rem); } }
+
+.recipe-of-week-section {
+  padding: 3rem; }
+  .recipe-of-week-section > .recipe-wide-card {
+    margin: auto auto; }
+
+.updates-section {
+  padding: 3rem;
+  padding: 5rem;
+  background-color: #f9f9f9; }
+  .updates-section .article * {
+    margin: 1.5rem auto; }
+  .updates-section > .article {
+    padding: 0 8rem; }
+
+.recipes-section {
+  background-image: url(../assets/images/black-1072366_1280.jpg);
+  background-attachment: fixed;
+  padding: 3rem; }
+
+@media (max-width: 600px) {
+  .recipe1_section .recipe-card-group {
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-between; }
+  .recipe1_section .recipe-card-group__title {
+    width: 100%;
+    height: 30%; } }
+
+@media (max-width: 600px) and (max-width: 800px) {
+  .recipe1_section .recipe-card-group {
+    justify-content: space-between;
+    flex-flow: column;
+    width: 100%; }
+  .recipe1_section .recipe-card-group__title {
+    width: 100vw;
+    height: 20%; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.light-text {
+  color: white; }
+
+.secondary-light-text {
+  color: #7b7977; }
+
+.dark-text {
+  color: #010101; }
+
+.primary-text {
+  color: #267cf4; }
+
+.secondary-text {
+  color: #444444; }
+
+.danger-text {
+  color: #C82333; }
+
+.success-text {
+  color: #218838; }
+
+warn-text {
+  color: #E0A800; }
+
+.container {
+  width: 1500px;
+  margin: 0 auto; }
+  .container--footer {
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); }
+
+.article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+  .article--left {
+    text-align: left; }
+  .article--right {
+    text-align: right; }
+  .article--center {
+    text-align: center; }
+  .article__title {
+    font-size: 3rem; }
+  .article__description {
+    font-size: 2rem;
+    line-height: 2rem; }
+  .article__signature {
+    width: 10rem;
+    height: 5rem;
+    margin: auto auto; }
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  font-family: Noto-serif;
+  text-decoration: none; }
+  .btn--text-dashed {
+    text-decoration: dashed underline; }
+  .btn--text-dotted {
+    text-decoration: dotted underline; }
+    .btn--text-dotted:hover {
+      text-decoration: solid underline; }
+  .btn--text-solid {
+    text-decoration: solid underline; }
+  .btn--text-primary {
+    color: #267cf4; }
+  .btn--text-secondary {
+    background-color: #444444;
+    color: white; }
+  .btn--text-danger {
+    background-color: #C82333;
+    color: white; }
+  .btn--text-success {
+    background-color: #218838;
+    color: white; }
+  .btn--text-warn {
+    background-color: #267cf4;
+    color: #010101; }
+  .btn--text-light {
+    background-color: white;
+    color: #010101; }
+  .btn--text-dark {
+    background-color: #010101;
+    color: white; }
+  .btn--rectangle {
+    border-radius: 0.25rem;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem; }
+    .btn--rectangle:hover {
+      text-decoration-line: underline; }
+  .btn--oblong {
+    font-size: 1.6rem;
+    padding: 0.7rem 2.2rem;
+    border-radius: 15%/50%;
+    align-self: flex-start; }
+  .btn--icon {
+    background-color: white;
+    border-radius: 100%; }
+    .btn--icon img {
+      height: 100%;
+      width: 100%; }
+  .btn-primary {
+    background-color: #267cf4;
+    color: white; }
+  .btn-secondary {
+    background-color: #444444;
+    color: white; }
+  .btn-danger {
+    background-color: #C82333;
+    color: white; }
+  .btn-success {
+    background-color: #218838;
+    color: white; }
+  .btn-warn {
+    background-color: #267cf4;
+    color: #010101; }
+  .btn-light {
+    background-color: white;
+    color: #010101; }
+  .btn-dark {
+    background-color: #010101;
+    color: white; }
+
+.btn:hover {
+  text-decoration: none; }
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 18rem;
+  perspective: 1000px; }
+  .flip-card h1 {
+    font-size: 2rem; }
+  .flip-card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .flip-card:hover .flip-card__inner {
+    transform: rotateY(180deg); }
+  .flip-card__front, .flip-card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; }
+  .flip-card__front {
+    background-color: #bbb;
+    color: black; }
+  .flip-card__back {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: #FFF;
+    color: #7b7977;
+    transform: rotateY(180deg); }
+
+.recipe-card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color: transparent; }
+
+.card {
+  overflow-wrap: break-word; }
+  .card__body {
+    padding: 1.25rem 1.25rem; }
+  .card .btn:hover {
+    color: #010101; }
+  .card .btn {
+    margin-bottom: 1.5rem; }
+  .card--recipe {
+    background-color: #f9f9f9; }
+    .card--recipe:hover .card__image--circle {
+      animation: rotating 60s linear infinite; }
+  .card--updates {
+    margin: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white; }
+  .card__badge {
+    height: 1rem; }
+    .card__badge-primary {
+      background-color: #267cf4;
+      color: white; }
+    .card__badge-secondary {
+      background-color: #444444;
+      color: white; }
+    .card__badge-danger {
+      background-color: #C82333;
+      color: white; }
+    .card__badge-success {
+      background-color: #218838;
+      color: white; }
+    .card__badge-warn {
+      background-color: #267cf4;
+      color: #010101; }
+    .card__badge-light {
+      background-color: white;
+      color: #010101; }
+    .card__badge-dark {
+      background-color: #010101;
+      color: white; }
+  .card__date {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    font-family: "Noto Serif"; }
+  .card__author {
+    font-family: "noto sans", sans-serif;
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    margin: 0.5rem; }
+    .card__author__name {
+      font-weight: 600; }
+  .card__image {
+    padding: 0; }
+    .card__image--circle {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%; }
+    .card__image--rectangle {
+      width: 100%;
+      max-width: 100%; }
+  .card__title {
+    margin-bottom: 1.5rem;
+    font-family: "Noto Serif";
+    font-weight: 600;
+    font-size: 1.5rem;
+    overflow: hidden; }
+  .card__text {
+    margin-bottom: 1.5rem;
+    font-size: 1rem; }
+
+.updates-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  margin: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: white;
+  /* &__image-container::after{
+     content: '';
+    position:absolute;
+    top:0;  left:0; 
+    height: 89%;
+    width: 91%;
+    opacity:0.5;
+    border:1rem solid $dark-color;
+   }*/ }
+  .updates-card__body {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 1.25rem 1.25rem;
+    height: 40%; }
+  .updates-card .btn:hover {
+    color: #010101; }
+  .updates-card .btn {
+    text-align: start; }
+  .updates-card__image-container {
+    position: relative;
+    background-clip: padding-box;
+    overflow: hidden;
+    height: 50%;
+    width: 100%; }
+  .updates-card__image {
+    width: 100%;
+    height: 100%; }
+  .updates-card__title {
+    margin-bottom: 1.5rem;
+    font-family: "Noto Serif";
+    font-weight: 600;
+    font-size: 1.3rem;
+    overflow: hidden; }
+  .updates-card__text {
+    margin-bottom: 1.5rem;
+    font-size: 1rem; }
+
+.updates-card:hover .updates-card__image {
+  transform: scale(1.2);
+  transition: 0.3s; }
+
+.full-Width-card {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+  .full-Width-card__img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-position: center;
+    object-fit: cover; }
+  .full-Width-card__body {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    left: 3rem; }
+  .full-Width-card .article--left > * {
+    margin: 1rem; }
+  .full-Width-card__form {
+    display: flex; }
+    .full-Width-card__form__input {
+      width: 25rem;
+      border-radius: 0.25rem;
+      outline: none;
+      border: solid 1px #7b7977;
+      font-size: 1.5rem;
+      padding-left: 1rem; }
+
+.category-card {
+  width: 4rem;
+  height: 20rem;
+  position: relative;
+  transition: 1s;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border-radius: 50%/10%;
+  overflow: hidden;
+  color: white;
+  font-weight: bold; }
+  .category-card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  .category-card__body {
+    position: absolute;
+    height: min-content;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column-reverse nowrap; }
+  .category-card .category-card__body > * {
+    margin: 0.25rem auto; }
+  .category-card__title {
+    order: 2;
+    writing-mode: vertical-lr;
+    font-size: 2rem; }
+  .category-card__btn {
+    order: 1;
+    padding: 0.25rem;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem; }
+  .category-card:hover {
+    transition: 1s;
+    width: 15rem;
+    border-radius: 5%; }
+    .category-card:hover .category-card__body {
+      transition: 0s;
+      flex-flow: row; }
+    .category-card:hover .category-card__title {
+      writing-mode: horizontal-tb; }
+    .category-card:hover .category-card__btn {
+      transition: 1s;
+      transform: rotate(360deg); }
+    .category-card:hover .category-card__btn::after {
+      transform: rotate(360deg); }
+
+.recipe-wide-card {
+  display: flex;
+  justify-content: space-between;
+  height: 30rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+  color: #010101; }
+  .recipe-wide-card--light-text {
+    color: white; }
+  .recipe-wide-card--img-left {
+    flex-flow: row-reverse; }
+  .recipe-wide-card__main-image {
+    object-fit: cover;
+    object-position: center;
+    width: 40%; }
+  .recipe-wide-card__body {
+    width: 60%;
+    padding: 3%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; }
+  .recipe-wide-card__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0; }
+  .recipe-wide-card__text {
+    font-size: 1rem;
+    margin: 1rem 0; }
+  .recipe-wide-card .recipe-wide-card__body > * {
+    margin-bottom: 1.5rem; }
+
+.title-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 35%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../assets/images/popular/side-bg.jpg);
+  background-size: cover; }
+  .title-card__body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%; }
+  .title-card__body > * {
+    margin: 1rem auto; }
+  .title-card .btn:hover {
+    background-color: #010101;
+    color: white; }
+  .title-card__title {
+    text-align: center;
+    font-size: 3rem;
+    color: #eeeeee;
+    font-weight: 600; }
+
+/*.toggle-class-test{ transition: 1s;
+  width:15rem;
+  border-radius: 5%;
+  .category-card__body{
+    transition: 0s;
+    flex-flow: row;
+    
+  }
+  .category-card__title{
+    writing-mode: horizontal-tb;
+  }
+ 
+  .category-card__btn{
+    transition: 1s;
+      transform: rotate(360deg);
+  }
+  .category-card__btn::after{
+    transform: rotate(360deg) ;
+  }
+ // transition: 1s;
+ 
+}*/
+.card-group {
+  display: grid;
+  grid-template-columns: 33%; }
+
+.updates-card-group {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent; }
+
+.recipe-card-group2 {
+  display: flex;
+  justify-content: space-around; }
+
+.recipe-card-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  .recipe-card-group__title {
+    width: 30%;
+    position: sticky;
+    top: 0; }
+  .recipe-card-group__recipe-grid {
+    width: 70%; }
+
+.category-card-group {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .category-card-group > * {
+    margin: 0 0.5em; }
+
+.list {
+  display: flex; }
+  .list--horizontal {
+    flex-flow: row wrap;
+    justify-content: start; }
+  .list--vertical {
+    flex-flow: column wrap;
+    justify-content: center; }
+  .list__item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    text-align: center; }
+    .list__item__image {
+      width: 25%;
+      height: 40%;
+      margin: 1rem 0; }
+    .list__item__text {
+      text-align: start;
+      font-size: 1rem;
+      font-weight: bold; }
+  .list--left-border__item:not(:first-child) {
+    border-left: solid #9f9f9f 1px; }
+
+.nav {
+  position: fixed;
+  top: 1rem;
+  z-index: 1000;
+  display: inline-block;
+  width: 100%;
+  background: transparent; }
+  .nav__menu {
+    padding: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    border-radius: 5%; }
+    .nav__menu--drop-down-list {
+      padding: auto;
+      position: absolute;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      visibility: hidden;
+      flex-flow: column nowrap;
+      justify-content: center;
+      margin-top: 1.3rem; }
+      .nav__menu--drop-down-list:last-child {
+        border-top: solid 2px #267cf4; }
+      .nav__menu--drop-down-list .nav__menu__item:hover {
+        transition: all 0.25s;
+        text-indent: 0.2rem;
+        padding-right: 1.3rem;
+        background-color: #f9f9f9; }
+      .nav__menu--drop-down-list > .nav__menu__item {
+        padding: 0.5rem 2rem; }
+    .nav__menu .nav__menu__item:hover .nav__menu--drop-down-list {
+      visibility: visible; }
+    .nav__menu__item {
+      padding: 1.3rem 1.5rem;
+      font-size: 1rem;
+      color: #444444;
+      background-color: white; }
+    .nav__menu__item:hover {
+      cursor: pointer;
+      color: #267cf4; }
+    @media (max-width: 600px) {
+      .nav__menu {
+        flex-flow: column-reverse; } }
+    @media (max-width: 800px) {
+      .nav__menu {
+        flex-flow: column-reverse; } }
+  .nav__logo {
+    height: 100%; }
+
+.footer {
+  position: relative;
+  color: whitesmoke;
+  margin: auto auto;
+  background-color: transparent; }
+  .footer__table > * {
+    padding-right: 4rem;
+    text-align: start; }
+  .footer__table--header {
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+    font-weight: 600;
+    text-align: start;
+    color: #f9f9f9; }
+    .footer__table--header__image-grid {
+      justify-content: start; }
+    .footer__table--header__list {
+      text-align: start;
+      border: none; }
+      .footer__table--header__list__btn {
+        font-size: 1rem;
+        text-align: start;
+        color: white; }
+      .footer__table--header__list__store-btn {
+        width: 10rem;
+        background-color: transparent; }
+      .footer__table--header__list__item {
+        border-left: solid #9f9f9f 0; }
+  .footer__lower-list {
+    position: relative;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    padding-top: 5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .footer__lower-list__btn-list {
+      font-size: 1rem;
+      padding: 0.5rem 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .footer__lower-list__btn {
+      height: 1rem;
+      width: 1rem;
+      margin: 0.25rem;
+      font-size: 1rem;
+      padding: 0.5rem 0.5rem; }
+      .footer__lower-list__btn:hover i {
+        animation: move-up 0.25s; }
+
+@keyframes move-up {
+  from {
+    transform: translate(0, -1rem); }
+  to {
+    transform: translate(0, 0); } }
+    .footer__lower-list__copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: start; }
+    .footer__lower-list__dotted-btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: start; }
+
+.grid {
+  display: grid;
+  grid-gap: 1px; }
+  .grid-image {
+    width: 6rem;
+    cursor: pointer; }
+  .grid .grid-image:hover {
+    filter: grayscale(50); }
+  .grid--c1 {
+    grid-template-columns: repeat(1, auto); }
+  .grid--c2 {
+    grid-template-columns: repeat(2, auto); }
+  .grid--c3 {
+    grid-template-columns: repeat(3, auto); }
+  .grid--c4 {
+    grid-template-columns: repeat(4, auto); }
+  .grid--c5 {
+    grid-template-columns: repeat(5, auto); }
+  .grid--c6 {
+    grid-template-columns: repeat(6, auto); }
+  .grid--c7 {
+    grid-template-columns: repeat(7, auto); }
+  .grid--c8 {
+    grid-template-columns: repeat(8, auto); }
+  .grid--c9 {
+    grid-template-columns: repeat(9, auto); }
+  .grid--c10 {
+    grid-template-columns: repeat(10, auto); }
+  .grid--c11 {
+    grid-template-columns: repeat(11, auto); }
+  .grid--c12 {
+    grid-template-columns: repeat(12, auto); }
+  .grid__grid-image:hover {
+    filter: brightness(110%); }
+
+.header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../assets/images/slider/1/bg.jpg);
+  background-position: center;
+  background-size: cover; }
+  .header__navigation-btns {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0rem;
+    right: 0rem;
+    color: white; }
+  .header__filter {
+    position: absolute;
+    object-fit: fill;
+    object-position: center;
+    width: 150%;
+    bottom: 0;
+    opacity: 0.1;
+    animation: 30s liquid  infinite linear; }
+  .header__prev {
+    cursor: pointer;
+    padding: 2rem; }
+  .header__next {
+    cursor: pointer;
+    padding: 2rem; }
+  .header__card {
+    height: 70%;
+    width: 60rem;
+    margin: auto auto;
+    box-shadow: none;
+    animation: fade-in 4s; }
+  .header_card > * {
+    color: white; }
+  .header__btn {
+    bottom: 0rem;
+    left: 0rem; }
+  .header__card-img {
+    animation: rotating 60s linear infinite;
+    height: 23rem;
+    width: 23rem; }
+  .header__body {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%; }
+  .header .recipe-wide-card__body {
+    animation: fade-in 10s; }

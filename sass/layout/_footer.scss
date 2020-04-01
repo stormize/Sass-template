@@ -1,0 +1,83 @@
+.footer{
+    position: relative;
+    color: whitesmoke;
+    margin: auto auto;
+    background-color: transparent;
+  
+    &__table{
+        & > *{
+          padding-right: 4rem;
+          text-align: start;
+        }
+        &--header{
+          @include apply-font-padding-margin(2rem,0rem,1.5rem);
+         font-weight: 600;
+         text-align: start;
+         color:$recipe-card-background;
+         
+         &__image-grid{
+          justify-content: start;
+         }
+         
+         &__list {
+             text-align: start;
+             border: none;
+             &__btn{
+                font-size: 1rem;
+                text-align: start;
+                color:$light-color;
+             }
+             &__store-btn{
+                width: 10rem;
+                background-color: transparent;
+            }
+             &__item{
+                border-left: solid #9f9f9f 0;
+             }
+         }
+        }
+}
+  &__lower-list{
+      position: relative;
+      @include apply-font-padding-margin(0.5rem,0.5rem,1rem);
+      padding-top: 5rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &__btn-list{
+        @include apply-font-padding-margin(0.5rem,0.5rem,1rem);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      &__btn{
+        
+          height: 1rem;
+          width: 1rem;
+          margin: 0.25rem;
+          @include apply-font-padding-margin(0.5rem,0.5rem,1rem);
+          &:hover{
+              i{
+                  animation: move-up 0.25s;
+                 // transform: translate(0,0);
+                 @keyframes move-up {
+                   from{transform: translate(0,-1rem)}
+                   to{ transform: translate(0,0)};
+                 }
+              }
+          }
+      }
+      &__copyright{
+        @include flex-row-center;
+        text-align: start;
+      }
+      &__dotted-btns{
+        @include flex-row-center;
+        text-align: start;
+      }
+  }
+  
+}

@@ -1,0 +1,63 @@
+.header{
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+    background-image: url(../assets/images/slider/1/bg.jpg);
+    background-position: center; 
+    background-size: cover;
+    &__navigation-btns{
+        position: absolute;
+        display: flex; 
+        justify-content: space-evenly;
+        bottom:0rem;
+        right:0rem;
+        color:white;
+    }
+    &__filter{
+      position: absolute;
+      object-fit: fill;
+      object-position: center;
+      width: 150%;
+      bottom: 0;
+     opacity: 0.1;
+      animation:  30s liquid  infinite linear;
+
+    }
+    &__prev{
+      cursor: pointer;
+      padding: 2rem;
+    }
+    &__next{
+     cursor: pointer;
+     padding: 2rem;
+    }
+    &__card{ 
+      height: 70%;
+      width: 60rem;
+      margin: auto auto;
+      box-shadow: none;
+      animation: fade-in 4s;
+    }
+    &_card > *{
+      color: white;
+    }
+    &__btn{
+      bottom: 0rem;
+      left: 0rem;
+    }
+    &__card-img{
+       @include rotating-img;
+       height: 23rem;
+       width: 23rem;
+    }
+    &__body{
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .recipe-wide-card__body{
+      animation: fade-in 10s;
+    }
+}

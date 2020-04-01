@@ -1,0 +1,24 @@
+.article{
+   @include flex-colmn-center;
+    &--left{
+        text-align: left;
+    }
+    &--right{
+        text-align: right;
+    }
+    &--center{
+        text-align: center;
+    }
+    &__title{
+        font-size: 3rem;
+    }
+    &__description{
+        font-size:2rem;
+        line-height: 2rem;
+    }
+    &__signature{
+        width: 10rem;
+        height: 5rem;
+        margin: auto auto;
+    }
+}

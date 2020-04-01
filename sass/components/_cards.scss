@@ -1,0 +1,415 @@
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 18rem;
+  perspective: 1000px;
+  h1{
+    font-size: 2rem;
+  }
+
+
+&__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+&:hover &__inner {
+  transform: rotateY(180deg);
+}
+
+&__front, &__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+&__front {
+  background-color: #bbb;
+  color: black;
+}
+
+&__back {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background-color: #FFF;
+  color: $secondary-light-color;
+  transform: rotateY(180deg);
+}}
+.recipe-card::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-color:transparent;
+}
+.card{
+ overflow-wrap: break-word; 
+ &__body{
+    padding:1.25rem 1.25rem;
+ }
+  .btn:hover{
+   color: $dark-color;
+   }
+   .btn{
+    @include card-elements-padding; 
+   }
+ &--recipe{
+   
+    background-color:$recipe-card-background;
+    &:hover{
+      .card__image--circle{
+        @include rotating-img;
+      }
+ }}
+ &--updates{
+  margin: 1rem;
+ box-shadow:  0 .125rem .25rem rgba(0,0,0,.075);
+    @include flex-colmn-center;
+    background-color: $light-color;
+ }
+ &__badge{
+     height: 1rem;
+     &-primary{
+        @include primary-button
+      } 
+      &-secondary{
+          @include secondary-button
+        } 
+      &-danger{
+          @include danger-button
+        } 
+      &-success{
+          @include success-button
+        } 
+      &-warn{
+          @include warn-button
+        }  
+      &-light{
+          @include light-button
+        } 
+      &-dark{
+          @include dark-button
+        }
+ }
+ &__date{
+    @include card-elements-padding;
+     font-weight: 400;
+     margin-top: 1rem;
+     font-family: "Noto Serif";     
+ }
+
+ &__author{ 
+    font-family :"noto sans", sans-serif;
+    color:rgb(170, 170, 170);
+    font-size: 0.8rem;
+    &__name{
+        font-weight: 600;
+    }
+    margin:0.5rem;
+ }
+ &__image{
+    padding: 0;
+     &--circle{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;  
+     }
+     &--rectangle{
+        width: 100%;
+       max-width: 100%;
+     }
+ }
+ &__title{
+    @include card-elements-padding;
+     font-family:"Noto Serif";
+     font-weight: 600;
+     font-size: 1.5rem;
+     overflow:hidden ;
+ }
+ &__text{
+     @include card-elements-padding;
+     font-size: 1rem;
+ }
+}
+.updates-card{
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  margin: 1rem;
+ box-shadow:  0 .125rem .25rem rgba(0,0,0,.075);
+    background-color: $light-color;
+  &__body{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding:1.25rem 1.25rem;
+    height: 40%;
+ }
+ .btn:hover{
+  color: $dark-color;
+  }
+  .btn{
+    text-align: start;
+  }
+  &__image-container{
+    position: relative;
+    background-clip: padding-box;
+    overflow: hidden;
+    height: 50%;
+    width: 100%;
+  }
+  &__image{
+        width: 100%;
+        height: 100%;
+   }
+  /* &__image-container::after{
+     content: '';
+    position:absolute;
+    top:0;  left:0; 
+    height: 89%;
+    width: 91%;
+    opacity:0.5;
+    border:1rem solid $dark-color;
+   }*/
+ 
+ &__title{
+  @include card-elements-padding;
+   font-family:"Noto Serif";
+   font-weight: 600;
+   font-size: 1.3rem;
+   overflow:hidden ;
+}
+
+&__text{
+   @include card-elements-padding;
+   font-size: 1rem;
+   
+}
+}
+.updates-card:hover{
+  .updates-card__image{
+   transform: scale(1.2);
+   transition: 0.3s;
+ }
+ 
+ //box-shadow:  0 .125rem .25rem $dark-color;
+}
+.full-Width-card{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  &__img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-position: center;
+    object-fit: cover;
+  }
+  &__body{
+    height: 100%;
+    position: absolute;
+    @include flex-colmn-center;
+    justify-content: space-around;
+    left: 3rem;
+  }
+  .article--left > *{
+    margin: 1rem;
+  }
+  &__form{
+    display: flex;
+    &__input{
+      width: 25rem;
+      border-radius: 0.25rem;
+      outline: none;
+      border:solid 1px $secondary-light-color;
+      font-size: 1.5rem;
+      padding-left: 1rem;
+    }
+    &__btn{
+
+    }
+  }
+}
+.category-card{
+  @include apply-width-height-position(4rem,20rem,relative);
+  transition: 1s;
+  @include flex-column;
+  border-radius: 50%/10%;
+  overflow: hidden;
+  color: $light-color;
+  font-weight: bold;
+  &__image{
+       position: absolute;
+       top:0;
+       left:0;
+       bottom: 0;
+       right: 0;
+       @include sizing-img;
+       width:100%;
+       height: 100%;
+       z-index: 0;
+  }
+  &__body{
+   position: absolute;
+   height: min-content;
+    left:0;
+    bottom: 0;
+    right: 0;
+   display: flex;
+   flex-flow: column-reverse nowrap;
+  }
+  .category-card__body > *{
+    margin:0.25rem auto;
+  }
+  &__title{
+    order: 2;
+     writing-mode: vertical-lr;
+     font-size: 2rem;
+  }
+  &__btn{ 
+   order: 1;
+   padding: 0.25rem;
+   flex-shrink: 0;
+   width: 2rem;
+   height:2rem;
+  }
+  &:hover{
+    transition: 1s;
+    width:15rem;
+    border-radius: 5%;
+    .category-card__body{
+      transition: 0s;
+      flex-flow: row;
+    }
+    .category-card__title{
+      writing-mode: horizontal-tb;
+    }
+    .category-card__btn{
+      transition: 1s;
+        transform: rotate(360deg);
+    }
+    .category-card__btn::after{
+      transform: rotate(360deg) ;
+    }
+  }
+}
+.recipe-wide-card{
+  @include flex-row;
+  height: 30rem;
+  width: 100%;
+  box-shadow:  rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+  color: $dark-color;
+  &--light-text{
+  color: $light-color;
+  }
+  &--img-left{
+    flex-flow: row-reverse ;
+  }
+  &__main-image{
+    @include sizing-img;
+    width: 40%;
+  }
+  &__body{
+    width: 60%;
+    padding:3%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  
+  &__title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  &__text{
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  .recipe-wide-card__body > *{
+    @include card-elements-padding;
+  }
+  }
+.title-card{
+    @include flex-row-center;
+    height: 100vh;
+    width: 35%;
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../assets/images/popular/side-bg.jpg);
+    background-size: cover;
+    &__body{
+      @include flex-colmn-center;
+      width: 50%;
+    }
+    &__body > *{
+        margin: 1rem auto;
+    }
+    .btn:hover{
+       @include dark-button;
+    }
+   
+    &__title{
+     text-align: center;
+     font-size: 3rem;
+     color:rgb(238, 238, 238);
+     font-weight: 600;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.toggle-class-test{ transition: 1s;
+  width:15rem;
+  border-radius: 5%;
+  .category-card__body{
+    transition: 0s;
+    flex-flow: row;
+    
+  }
+  .category-card__title{
+    writing-mode: horizontal-tb;
+  }
+ 
+  .category-card__btn{
+    transition: 1s;
+      transform: rotate(360deg);
+  }
+  .category-card__btn::after{
+    transform: rotate(360deg) ;
+  }
+ // transition: 1s;
+ 
+}*/

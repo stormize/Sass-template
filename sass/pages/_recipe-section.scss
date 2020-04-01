@@ -1,0 +1,23 @@
+.recipe1_section{
+    @include media-query(mobile){
+        .recipe-card-group{
+            flex-flow: column;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .recipe-card-group__title{
+            width: 100%;
+            height: 30%;
+        }
+        @include media-query(tablet){
+            .recipe-card-group{
+                justify-content: space-between;
+                flex-flow: column;
+                width: 100%;
+            }
+            .recipe-card-group__title{
+                width: 100vw;
+                height: 20%;
+            }
+    }
+}}

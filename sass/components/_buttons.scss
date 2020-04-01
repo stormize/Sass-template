@@ -1,0 +1,86 @@
+.btn {
+    cursor: pointer;
+    text-align: center;
+    font-family:Noto-serif;
+    text-decoration: none;
+    &--text{
+        &-dashed{
+            text-decoration:dashed underline;
+        }
+        &-dotted{
+            text-decoration:dotted underline;
+            &:hover{
+                text-decoration: solid underline;
+            }
+        }
+        &-solid{
+            text-decoration:solid underline;
+        }
+        &-primary{
+          color:  $primary-color;
+        } 
+        &-secondary{
+            @include secondary-button
+          } 
+        &-danger{
+            @include danger-button
+          } 
+        &-success{
+            @include success-button
+          } 
+        &-warn{
+            @include warn-button
+          }  
+        &-light{
+            @include light-button
+          } 
+        &-dark{
+            @include dark-button
+          }
+      }
+    &--rectangle{
+           border-radius: 0.25rem;
+           @include apply-font-padding-margin( 0.5rem,1.5rem,2rem);
+        &:hover{
+            text-decoration-line: underline;
+        }
+    }
+    &--oblong{
+        @include apply-font-padding-margin( 0.7rem,2.2rem,1.6rem);
+        border-radius: 15%/50%;
+        align-self: flex-start;
+    }
+ 
+    &--icon{  
+        background-color: $light-color;
+        border-radius: 100%;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+    }
+    &-primary{
+      @include primary-button
+    } 
+    &-secondary{
+        @include secondary-button
+      } 
+    &-danger{
+        @include danger-button
+      } 
+    &-success{
+        @include success-button
+      } 
+    &-warn{
+        @include warn-button
+      }  
+    &-light{
+        @include light-button
+      } 
+    &-dark{
+        @include dark-button
+      } 
+}
+.btn:hover{
+  text-decoration: none;
+}

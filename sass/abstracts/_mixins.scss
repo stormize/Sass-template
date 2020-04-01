@@ -1,0 +1,118 @@
+// buttons with background
+@mixin primary-button{
+    background-color:$primary-color;
+    color:$light-color;
+}
+@mixin secondary-button{
+    background-color:$secondary-color;
+    color:$light-color;
+}
+@mixin light-button{
+    background-color:$light-color;
+    color:$dark-color;
+}
+@mixin dark-button{
+    background-color:$dark-color;
+    color:$light-color;
+}
+@mixin danger-button{
+    background-color:$danger-color;
+    color:$light-color;
+}
+@mixin success-button{
+    background-color:$success-color;
+    color:$light-color;
+}
+@mixin warn-button{
+    background-color:$primary-color;
+    color:$dark-color;
+}
+//text buttons
+@mixin primary-text-button{
+    
+    color:$light-color;
+}
+@mixin secondary-text-button{
+    
+    color:$light-color;
+}
+@mixin light-text-button{
+    
+    color:$dark-color;
+}
+@mixin dark-textbutton{
+    
+    color:$light-color;
+}
+@mixin danger-text-button{
+    
+    color:$light-color;
+}
+@mixin success-text-button{
+    
+    color:$light-color;
+}
+@mixin warn-text-button{
+    
+    color:$dark-color;
+}
+@mixin card-elements-padding {
+    margin-bottom: 1.5rem;
+}
+@mixin  rotating-img {
+    animation: rotating 60s linear infinite;
+}
+
+@mixin  sizing-img {
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin  flex-column {
+    display: flex;
+    flex-flow: column wrap;
+  justify-content: space-between;
+}
+@mixin flex-colmn-center {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin  flex-row {
+    display: flex;
+    justify-content: space-between;
+   
+}
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin apply-font-padding-margin( $padding-top,$padding-left,$font-size:0) {
+    @if $font-size != 0{
+        font-size: $font-size;
+    }
+    
+    padding:$padding-top $padding-left;
+}
+@mixin apply-width-height-position($width,$height,$position){
+      width: $width;
+      height:$height;
+      position: $position;
+}
+
+//media query mixin
+@mixin media-query($device) {
+    @if $device =="mobile"{
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+    @if $device =="tablet"{
+        @media (max-width: 800px) {
+            @content
+        }
+    }
+}
